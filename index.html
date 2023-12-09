@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Srushti Sawant">
+    <meta name="keywords" content="portfolio, projects, Srushti Sawant">
+    <meta name="description" content="personal portfolio">
+    <title>Srushti Sawant</title>
+    <link rel="icon" href="./assets/images/Srushti Sawant Logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body style="font-family: 'Varela', sans-serif;">
+    <header class="header">
+        <div class="custom-container">
+            <div class="header__wrapper">
+                <div class="menu">
+                    <label class="menu__btn" for="menu">
+                        <input type="checkbox" id="menu" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="menu__navbar invisible">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">HOME</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#about">ABOUT ME</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#skills">SKILLS</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#projects">PROJECTS</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu__navbar-bigger">
+                        <label class="menu__navbar-close" for="menu">
+                            <svg version="1.1" fill="#000" height="25" width="25" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 511.995 511.995" style="enable-background:new 0 0 511.995 511.995;"
+                                xml:space="preserve">
+                                <path d="M437.126,74.939c-99.826-99.826-262.307-99.826-362.133,0C26.637,123.314,0,187.617,0,256.005
+                                        s26.637,132.691,74.993,181.047c49.923,49.923,115.495,74.874,181.066,74.874s131.144-24.951,181.066-74.874
+                                        C536.951,337.226,536.951,174.784,437.126,74.939z M409.08,409.006c-84.375,84.375-221.667,84.375-306.042,0
+                                        c-40.858-40.858-63.37-95.204-63.37-153.001s22.512-112.143,63.37-153.021c84.375-84.375,221.667-84.355,306.042,0
+                                        C493.435,187.359,493.435,324.651,409.08,409.006z" />
+                                <path
+                                    d="M341.525,310.827l-56.151-56.071l56.151-56.071c7.735-7.735,7.735-20.29,0.02-28.046
+                                        c-7.755-7.775-20.31-7.755-28.065-0.02l-56.19,56.111l-56.19-56.111c-7.755-7.735-20.31-7.755-28.065,0.02
+                                        c-7.735,7.755-7.735,20.31,0.02,28.046l56.151,56.071l-56.151,56.071c-7.755,7.735-7.755,20.29-0.02,28.046
+                                        c3.868,3.887,8.965,5.811,14.043,5.811s10.155-1.944,14.023-5.792l56.19-56.111l56.19,56.111
+                                        c3.868,3.868,8.945,5.792,14.023,5.792c5.078,0,10.175-1.944,14.043-5.811C349.28,331.117,349.28,318.562,341.525,310.827z" />
+                            </svg>
+                        </label>
+                        <ul class="menu__list-bigger">
+                            <li class="menu__item-bigger"><a class="menu__link-bigger" href="#">HOME</a></li>
+                            <li class="menu__item-bigger"><a class="menu__link-bigger" href="#about">ABOUT ME</a></li>
+                            <li class="menu__item-bigger"><a class="menu__link-bigger" href="#skills">SKILLS</a></li>
+                            <li class="menu__item-bigger"><a class="menu__link-bigger" href="#projects">PROJECTS</a></li>
+                            <li class="menu__item-bigger"><a class="menu__link-bigger" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul class="header__media">
+                    <li class="social-btn social-btn--mail">
+                        <a href="mailto:srushtisawant028@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-btn social-btn--tel">
+                        <a href="phone:(+91)8291536112">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"
+                                class="bi bi-tel" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-btn social-btn--instagram">
+                        <a href="https://www.instagram.com/srushtisawantt_/?next=%2F" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-btn social-btn--linkedin"><a href="#">
+                            <a href="https://www.linkedin.com/in/srushti-sawant-980164210/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                    </li>
+                    <li class="social-btn social-btn--github"><a href="#">
+                            <a href="https://github.com/srushtisawantt" target="_blank">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"
+                                class="bi bi-hub" viewBox="0 0 16 16"> 
+                                    <path 
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                            </a>
+                    </li>
+                    <li class="social-btn social-btn--tableau"><a href="#">
+                        <a href="https://public.tableau.com/app/profile/srushti.sawant/vizzes" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"
+                            class="bi bi-tableau" viewBox="0 0 16 16">
+                                <path 
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 1.11.2 2.2.33 3.26.38-.2-.33-.44-.72-.71-1.16-.69-1.25-1.63-2.98-1.77-5.53.36-.65.96-.77 1.31-.77.41 0 .83.04 1.22.14.01.01.02.01.03.02 1.2.38 2.02 1.49 2.02 2.8 0 1.35-.93 2.42-2.2 2.85.52 1.54.93 2.95.89 3.97 0 .21.15.46.55.38 2.75-.49 4.87-3.12 4.87-6.31C16 3.58 12.42 0 8 0zM4.34 3.68c-.29-.24-.68-.36-1.09-.36s-.79.12-1.09.36c-.16.14-.27.33-.34.55s-.08.47-.03.7c.19 1.17 1.09 1.88 2.17 1.69.23-.03.45-.14.62-.3.16-.16.27-.36.3-.58s-.04-.43-.14-.62c-.21-.47-.74-.78-1.35-.63zm6.05-.69c-.45 0-.89.09-1.3.26-.23.1-.43.25-.6.43s-.3.37-.4.6c-.22.52-.26 1.15-.12 1.79.05.21.13.42.23.62s.26.37.42.52c.15.15.32.26.51.35.38.16.8.24 1.26.24.45 0 .89-.09 1.3-.26.23-.1.43-.25.6-.43s.3-.37.4-.6c.22-.52.26-1.15.12-1.79a4.652 4.652 0 00-.23-1.79c-.06-.21-.14-.42-.23-.62s-.26-.37-.42-.52c-.15-.15-.32-.26-.51-.35-.39-.16-.81-.24-1.27-.24zm1.03 6.05c-.28 0-.56-.05-.82-.16-.22-.09-.41-.22-.57-.38s-.29-.35-.38-.57c-.11-.27-.16-.56-.16-.84 0-.28.05-.56.16-.83.09-.22.22-.41.38-.57s.35-.29.57-.38c.11-.27.16-.56.16-.84 0-.28-.05-.56-.16-.83-.09-.22-.22-.41-.38-.57s-.35-.29-.57-.38c-.26-.11-.54-.16-.82-.16z"/>
+                            </svg>                                                      
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="custom-container">
+                <div class="hero__wrapper">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="hero__img-box">
+                                <img class="hero__img" src="assets/images/Profile.jpg" alt="">
+                                <div class="hero__img-shadow"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="header-text">
+                                <div class="header-text__top">
+                                    <h1>
+                                        <span class="header-text__title">Srushti Sawant</span>
+                                    </h1>
+                                </div>
+                                <div style="display: flex; font-size: 12px;" class="header-text__bottom">
+                                    <h2>Electronics and Communication Engineering Student</h2>
+                                </div>
+                            </div>
+                            <a href="assets/documents/Srushti Sawant.pdf" download>
+                                <button class="btn__main">
+                                    Download Resume
+                                    <div class="btn__main__horizontal"></div>
+                                    <div class="btn__main__vertical"></div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="custom-container">
+                <h2 class="title"><span data-hover-item="about">
+                        About Me
+                    </span></h2>
+                <div class="about__content" data-hover-in="about">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-sm-12 col-xl-6 col-lg-6">
+                            <div class="about__education d-flex justify-content-center">
+                                <div class="education">
+                                    <div class="education__icon-wrapper d-flex justify-content-start ">
+                                        <div class="education__icon">
+                                            <img class="education__img" src="assets/images/Education Hat.png"
+                                                alt="education">
+                                        </div>
+                                    </div>
+                                    <div class="education__content">
+                                        <div style="display: flex; font-size: 17px;" class="education__year">2021 - 2025</div>
+                                        <h3 style="display: flex; font-size: 150px;" class="education__title"></h3>B.Tech in Electronics and Communication Engineering</h3>
+                                    <h3 style="display: flex; font-size: 12px;" class="education__place">MIT World Peace University</h3>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+        </section>
+        <section class="skills mt-5" id="skills">
+            <div class="custom-container">
+                <h2 class="title"><span data-hover-item="skill">Skills</span></h2>
+                <div style="background-color: #FFFFFF;" class="skills__wrapper" data-hover-in="skill">
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Tableau icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">Tableau</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Power BI icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">Power BI</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Python icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">Python</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Cpp icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">C++</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/R Language icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">R</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/SQL icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">SQL</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/HTML icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">HTML</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/CSS icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">CSS</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Javascript icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">Javascript</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/MATLAB icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">MATLAB</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Proteus icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">Proteus</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Vs code icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">Vs Code</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Multisim icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">Multisim</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Microcontrollers icon.png" alt="">
+                        </div>
+                        <h4 class="skill__title">Microcontrollers</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <img class="skill__img" src="assets/images/Ms Office icon.png" alt="">
+                            <div class="skill__circles">
+                                <div class="skill__circle-1"></div>
+                                <div class="skill__circle-2"></div>
+                                <div class="skill__circle-3"></div>
+                            </div>
+                        </div>
+                        <h4 class="skill__title">Ms Office</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="other-skills">
+            <div class="custom-container">
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <img style="display: flex; border-radius: 8px;" class="accordion__img"
+                            src="assets/images/Other skill 1.avif">
+                        <div class="accordion__title">Intellectual Curiosity</div>
+                        <div style="display: flex; font-size: 16px;" class="accordion__text">
+                            Intellectual curiosity is the driving force that compels to explore the unknown, question established norms, and relentlessly pursue knowledge, fostering innovation and breakthroughs in their field.</div>
+                        </div>
+                    <div class="accordion__item">
+                        <img style="display: flex; border-radius: 8px;" class="accordion__img"
+                            src="assets/images/Other skill 2.jpeg">
+                        <div class="accordion__title">Business Acumen</div>
+                        <div style="display: flex; font-size: 16px; margin-top: 30px;" class="accordion__text"> 
+                            Integrating data insights with organizational objectives, translating complex analytics into strategic solutions that empower informed decision-making and drive business success.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <img style="display: flex; border-radius: 8px;" class="accordion__img"
+                            src="assets/images/Other skill 3.jpeg">
+                        <div class="accordion__title">Problem Solving</div>
+                        <div style="display: flex; font-size: 16px; margin-top: 10px" class="accordion__text">
+                            Leveraging analytical prowess and technical expertise to unravel complex data challenges, derive actionable insights, and drive informed decision-making for impactful solutions.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <img style="display: flex; border-radius: 8px;" class="accordion__img"
+                            src="assets/images/Other skill 4.jpg">
+                        <div class="accordion__title">Programming Principles</div>
+                        <div style="display: flex; font-size: 16px; margin-top: 10px" class="accordion__text">
+                            Efficiently manipulate and analyze data, leveraging languages such as Python or R to develop scalable solutions, automate processes, and extract meaningful insights for informed decision-making.
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="quality">
+            <div class="custom-container">
+                <ul class="list">
+                    <li class="list__item">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" fill="#85addb"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="28"
+                                viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                <g id="check-circle-outline">
+                                    <path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+                                    S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+                                    s114.75,255,255,255s255-114.75,255-255H459z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p style="display: flex; font-size: 18px;" class="list__text">Analytical skills for problem
+                            finding, troubleshooting and problem solving
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" fill="#85addb"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="28"
+                                viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                <g id="check-circle-outline">
+                                    <path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+                                    S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+                                    s114.75,255,255,255s255-114.75,255-255H459z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p style="display: flex; font-size: 18px;" class="list__text">Good team member and ability to
+                            work within a team</p>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" fill="#85addb"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="28"
+                                viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                <g id="check-circle-outline">
+                                    <path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+                                S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+                                s114.75,255,255,255s255-114.75,255-255H459z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p style="display: flex; font-size: 18px;" class="list__text">Good communication skills to
+                            convey and present key ideas</p>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" fill="#85addb"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="28"
+                                viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                <g id="check-circle-outline">
+                                    <path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+                                S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+                                s114.75,255,255,255s255-114.75,255-255H459z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p style="display: flex; font-size: 18px;" class="list__text">Technical Ability</p>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" fill="#85addb"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="28"
+                                viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                <g id="check-circle-outline">
+                                    <path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+                                    S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+                                    s114.75,255,255,255s255-114.75,255-255H459z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p style="display: flex; font-size: 18px;" class="list__text">Ability to adapt to the given task
+                            and research</p>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" fill="#85addb"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="28"
+                                viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                <g id="check-circle-outline">
+                                    <path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+                                    S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+                                    s114.75,255,255,255s255-114.75,255-255H459z" />
+                                </g>
+                            </svg>
+                        </span>
+                        <p style="display: flex; font-size: 18px; " class="list__text">Working under stressful
+                            conditions</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="language mb-5">
+            <div class="custom-container">
+                <h2 class style="font-size: 30px; text-align: center;color: #000;"><span>Language
+                        skills</span></h2>
+                <div class="language__content">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6">
+                            <div class="language__box">
+                                <div class="language__text"> 
+                                    <h3 style="display: flex; font-size: 21px;" class="language__title">English </h3>
+                                </div>
+                                <div style="display: flex; font-size: 18px; margin-left: 42px;"
+                                    class="language__subtitle">Bilingual/Native Proeficiency </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6">
+                            <div class="language__box">
+                                <div class="language__text"> 
+                                    <h3 style="display: flex; font-size: 21px;" class="language__title"> Hindi </h3>
+                                </div>
+                                <div style="display: flex; font-size: 18px; margin-left: 42px;"
+                                    class="language__subtitle"> Bilingual/Native Proeficiency </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6">
+                            <div class="language__box">
+                                <div class="language__text"> 
+                                    <h3 style="display: flex; font-size: 21px;" class="language__title"> Marathi </h3>
+                                </div>
+                                <div style="display: flex; font-size: 18px; margin-left: 42px;"
+                                    class="language__subtitle"> Bilingual/Native Proeficiency </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-6 col-lg-6">
+                            <div class="language__box">
+                                <div class="language__text"> 
+                                    <h3 style="display: flex; font-size: 21px;" class="language__title"> French </h3>
+                                </div>
+                                <div style="display: flex; font-size: 18px; margin-left: 42px;"
+                                    class="language__subtitle"> Elementary Proeficiency </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="custom-container">
+                <h2 class="title"><span data-hover-item="work">Projects</span></h2>
+                <div class="work__wrapper" data-hover-in="work">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Drowsy Driver Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Drowsy Driver </span>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Kavach Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Kavach </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/BGL Sensing Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">BGL Sensing</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Walmart Analysis Dashboard Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Walmart Sales Analysis Dashboard</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Comparative Study of Countries.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Comparative Study of Countries Dashboard</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Comparison of Sales by Region Dashboard Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Comparison of Sales by Region Dashboard</span>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Stockop Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Stockop</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Smart Traffic Management System.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Smart Traffic Management System</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Beach Cleaning Bot Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Beach CLeaning Bot</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Smart Blind Stick Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Smart Blind Stick</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Health Tracker Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Health Tracker</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Social Distancing Detector Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Social Distancing Detector and Alarming System</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Localite Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Localite</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <a target="_blank"
+                                class="work__box work__box--2">
+                                <img style="display: flex; border-radius: 6px;" class="work__img"
+                                    src="assets/images/Sonic Image.png" alt="">
+                                <div style="display: flex; border-radius: 8px;" class="work__close">
+                                    <svg class="work__plus" height="30" viewBox="0 0 426.66667 426.66667" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" />
+                                    </svg>
+                                    <span class="work__title">Sonic</span>
+                                </div>
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="title"><span data-hover-item="contact">Contact</span></h2>
+            <div class="custom-container">
+                <div class="row justify-content-center form__box" data-hover-in="contact">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="wrapper">
+                            <div class="row no-gutters">
+                                <div class="col-md-7 d-flex align-items-stretch">
+                                    <div class="contact-wrap w-100 p-md-5 p-4">
+                                        <div id="form-message-warning" class="mb-4"></div>
+                                        <form method="POST" id="contactForm" name="contactForm"
+                                            action="mailto:ramalfattahi@gmail.com" enctype="text/plain">
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6 col-sm-12 col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input
+                                                            style="background-color: #F0F0F0; border-radius: 5px; font-size: 16px;"
+                                                            type="text" class="form-control" name="name" id="name"
+                                                            placeholder=" Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-sm-12 col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input
+                                                            style="background-color: #F0F0F0 ; border-radius: 5px; font-size: 16px;"
+                                                            type="email" class="form-control" name="email" id="email"
+                                                            placeholder=" E-mail">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <textarea
+                                                            style="background-color: #F0F0F0; border-radius: 5px; font-size: 17px; padding: 12px 0; "
+                                                            name="message" class="form-control" id="message" cols="30"
+                                                            rows="7" placeholder=" Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input type="submit" value="Send Message"
+                                                            class="form__btn form__btn--primary">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div style="padding-top: 25px;" class="col-md-5 d-flex align-items-stretch">
+                                    <div style="background-color: white; margin-bottom: 0px;" class="info-wrap w-100 ">
+                                        <h3 style="font-size: 20px;" class="mb-4 mt-md-4 d-flex"></h3>
+                                        <div class="dbox w-100 d-flex align-items-start">
+                                            <div style="background-color: #85addb;"
+                                                class="icon d-flex align-items-center justify-content-center me-5">
+                                                <svg version="1.1" width="24" height="24" fill="white" id="Layer_1"
+                                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                    xml:space="preserve">
+                                                    <path
+                                                        d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5
+                                                    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021
+                                                    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333
+                                                    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z" />
+                                                </svg>
+                                            </div>
+                                            <div style="font-size: 19px; margin-top: 10px; color: #000;" class="text">
+                                                <p><span style="color: #000;">Address:</span> Mumbai, Maharastra </p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div style="background-color: #85addb;"
+                                                class="icon d-flex align-items-center justify-content-center me-5">
+                                                <svg version="1.1" width="24" height="24" fill="white" id="Capa_1"
+                                                    width="35px" height="35px" viewBox="0 0 35 35"
+                                                    style="enable-background:new 0 0 35 35;" xml:space="preserve">
+                                                    <path d="M25.302,0H9.698c-1.3,0-2.364,1.063-2.364,2.364v30.271C7.334,33.936,8.398,35,9.698,35h15.604
+                                                    c1.3,0,2.364-1.062,2.364-2.364V2.364C27.666,1.063,26.602,0,25.302,0z M15.004,1.704h4.992c0.158,0,0.286,0.128,0.286,0.287
+                                                    c0,0.158-0.128,0.286-0.286,0.286h-4.992c-0.158,0-0.286-0.128-0.286-0.286C14.718,1.832,14.846,1.704,15.004,1.704z M17.5,33.818
+                                                    c-0.653,0-1.182-0.529-1.182-1.183s0.529-1.182,1.182-1.182s1.182,0.528,1.182,1.182S18.153,33.818,17.5,33.818z M26.021,30.625
+                                                    H8.979V3.749h17.042V30.625z" />
+                                                </svg>
+                                            </div>
+                                            <div style="font-size: 19px; color: #000;" class="text">
+                                                <p><span style="color: #000;">Phone: </span> (+91)8291536112</p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div style="background-color:#85addb;"
+                                                class="icon d-flex align-items-center justify-content-center me-5">
+                                                <svg version="1.1" width="24" height="24" fill="white" id="Capa_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                    xml:space="preserve">
+                                                    <path
+                                                        d="M467,76H45C20.137,76,0,96.262,0,121v270c0,24.885,20.285,45,45,45h422c24.655,0,45-20.03,45-45V121
+                                                                C512,96.306,491.943,76,467,76z M460.698,106c-9.194,9.145-167.415,166.533-172.878,171.967c-8.5,8.5-19.8,13.18-31.82,13.18
+                                                                s-23.32-4.681-31.848-13.208C220.478,274.284,64.003,118.634,51.302,106H460.698z M30,384.894V127.125L159.638,256.08L30,384.894z
+                                                                M51.321,406l129.587-128.763l22.059,21.943c14.166,14.166,33,21.967,53.033,21.967c20.033,0,38.867-7.801,53.005-21.939
+                                                                l22.087-21.971L460.679,406H51.321z M482,384.894L352.362,256.08L482,127.125V384.894z" />
+                                                </svg>
+                                            </div>
+                                            <div style="font-size: 17px;" class="text pl-3">
+                                                <p><span style="color: #000;">Email:</span> <a style="color: #000;"
+                                                        href="mailto:ramalfattahi@gmail.com">srushtisawant028@gmail.com</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="custom-container__fluid">
+            <div class="footer__wrapper">
+                Srushti Sawant @2023 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
